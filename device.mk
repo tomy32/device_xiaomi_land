@@ -17,10 +17,15 @@
 # Inherit proprietary files
 $(call inherit-product, vendor/xiaomi/land/land-vendor.mk)
 
+<<<<<<< HEAD
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
+=======
+# Overlay
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+>>>>>>> 8701c43... mido: Clean up
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1280
