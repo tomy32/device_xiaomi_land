@@ -109,7 +109,18 @@ persist.qfp=false
 
 # Fm
 PRODUCT_PROPERTY_OVERRIDES += \
-ro.fm.transmitter=false
+    debug.egl.hw=1 \
+    vendor.gralloc.enable_fb_ubwc=1 \
+    debug.sf.hw=1 \
+    debug.sf.latch_unsignaled=1 \
+    dev.pm.dyn_samplingrate=1 \
+    persist.demo.hdmirotationlock=false \
+    persist.hwc.enable_vds=1 \
+    persist.sys.wfd.virtual=0 \
+    sdm.debug.disable_rotator_split=1 \
+    vendor.display.disable_skip_validate=1 \
+    sdm.perf_hint_window=50
+
 
 # GPS
 PRODUCT_PROPERTY_OVERRIDES += \
