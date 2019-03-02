@@ -454,7 +454,16 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf \
     $(DEVICE_PATH)/configs/hostapd.accept:system/etc/hostapd/hostapd.accept \
     $(DEVICE_PATH)/configs/hostapd.deny:system/etc/hostapd/hostapd.deny
-    
+
+# Performance frameworks
+PRODUCT_PACKAGES += \
+    QPerformance \
+    UxPerformance
+
+PRODUCT_BOOT_JARS += \
+    QPerformance \
+    UxPerformance
+
 # WiFi Display
 PRODUCT_PACKAGES += \
     libaacwrapper \
