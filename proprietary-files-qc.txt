@@ -18,6 +18,8 @@ vendor/lib/rfsa/adsp/libfastcvadsp.so
 
 # Audio libraries - from marmite - OPM5.171019.017 - UOS273C
 etc/permissions/audiosphere.xml
+-framework/QPerformance.jar
+-framework/UxPerformance.jar
 framework/audiosphere.jar
 vendor/lib/libacdb-fts.so
 vendor/lib/libacdbloader.so
