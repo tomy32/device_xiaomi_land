@@ -137,14 +137,14 @@ vendor/lib64/vendor.qti.latency@2.0.so
 vendor/bin/hvdcp_opti
 
 # DPM - from daisy - PKQ1.180917.001.V10.0.2.0.PDLMIFJ
+-framework/com.qti.dpmframework.jar
+-framework/dpmapi.jar
+-framework/tcmclient.jar
 vendor/bin/dpmQmiMgr
 vendor/lib/com.qualcomm.qti.dpm.api@1.0.so
 vendor/lib/libdpmqmihal.so
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so
 vendor/lib64/libdpmqmihal.so
--framework/com.qti.dpmframework.jar
--framework/dpmapi.jar
--framework/tcmclient.jar
 
 # DRM - from marmite - OPM5.171019.017 - UOS273C
 vendor/bin/qseecomd
@@ -395,6 +395,8 @@ vendor/lib/libwms.so
 vendor/lib64/libwms.so
 
 # Perf - from marmite - OPM5.171019.017 - UOS273C
+-framework/QPerformance.jar
+-framework/UxPerformance.jar
 -lib/vendor.qti.hardware.iop@1.0.so
 -lib/vendor.qti.hardware.iop@2.0.so
 lib/vendor.qti.hardware.perf@1.0.so
