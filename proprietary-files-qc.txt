@@ -142,6 +142,9 @@ vendor/lib/com.qualcomm.qti.dpm.api@1.0.so
 vendor/lib/libdpmqmihal.so
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so
 vendor/lib64/libdpmqmihal.so
+-framework/com.qti.dpmframework.jar
+-framework/dpmapi.jar
+-framework/tcmclient.jar
 
 # DRM - from marmite - OPM5.171019.017 - UOS273C
 vendor/bin/qseecomd
@@ -182,6 +185,7 @@ vendor/lib/hw/gatekeeper.msm8937.so
 vendor/lib64/hw/gatekeeper.msm8937.so
 
 # GPS - from daisy - PKQ1.180917.001.V10.0.2.0.PDLMIFJ
+-framework/com.qti.location.sdk.jar
 etc/permissions/com.qti.location.sdk.xml
 etc/permissions/com.qualcomm.location.xml
 etc/permissions/izat.xt.srv.xml
@@ -347,7 +351,7 @@ vendor/lib64/hw/sound_trigger.primary.msm8937.so
 vendor/lib/libI420colorconvert.so
 vendor/lib/libmm-color-convertor.so
 vendor/lib/libmmosal_proprietary.so
-vendor/lib/libMpeg4SwEncoder.so
+-vendor/lib/libMpeg4SwEncoder.so
 vendor/lib/libOmxAacDec.so
 vendor/lib/libOmxAlacDec.so
 vendor/lib/libOmxAlacDecSw.so
