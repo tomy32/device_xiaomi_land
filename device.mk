@@ -339,13 +339,12 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
+    android.hardware.radio.config@1.0 \
+    android.hardware.secure_element@1.0 \
     librmnetctl \
+    libcnefeatureconfig \
     libxml2 \
-    libprotobuf-cpp-full \
-    libqdMetaData.system
-
-PRODUCT_PACKAGES += \
-    ims-ext-common
+    telephony-ext
 
 # Sensors
 PRODUCT_PACKAGES += \
