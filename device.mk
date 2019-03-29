@@ -169,6 +169,12 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-service \
     android.hardware.configstore@1.0-service
 
+# OMNI Charger Images
+PRODUCT_PACKAGES += \
+    omni_charger_res_images \
+    animation.txt \
+    font_charger.png
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
@@ -340,17 +346,14 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
+    android.hardware.radio.config@1.0 \
+    android.hardware.secure_element@1.0 \
     librmnetctl \
+    libcnefeatureconfig \
     libxml2 \
-    libprotobuf-cpp-full \
-    libqdMetaData.system
 
 PRODUCT_PACKAGES += \
     telephony-ext \
-    ims-ext-common
-
-PRODUCT_BOOT_JARS += \
-    telephony-ext
 
 # Sensors
 PRODUCT_PACKAGES += \
