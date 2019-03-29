@@ -19,10 +19,19 @@ DEVICE_PATH := device/xiaomi/land
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-# Inherit some common Reloaded-CAF stuff
-$(call inherit-product, vendor/reloaded/common.mk)
+# Get the prebuilt list of APNs
+$(call inherit-product, vendor/omni/config/gsm.mk)
+
+# Inherit some common Omni stuff
+$(call inherit-product, vendor/omni/config/common.mk)
+
+PRODUCT_PACKAGE_OVERLAYS += vendor/omni/overlay/CarrierConfig
+DEVICE_PACKAGE_OVERLAYS += device/xiaomi/land/overlay
+
+#Boot Animation Omani Stuff.
+TARGET_BOOTANIMATION_SIZE := 720p
 
 # Inherit from land device
 $(call inherit-product, $(DEVICE_PATH)/device.mk)
@@ -30,7 +39,7 @@ $(call inherit-product, $(DEVICE_PATH)/device.mk)
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := land
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := aosp_land
+PRODUCT_NAME := omni_land
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
@@ -42,5 +51,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # Set BUILD_FINGERPRINT variable
 BUILD_FINGERPRINT := "Xiaomi/land/land:6.0.1/MMB29M/V9.6.1.0.MALMIFD:user/release-keys"
 
-PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
-    ro.product.model
+
