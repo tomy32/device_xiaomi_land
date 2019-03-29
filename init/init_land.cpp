@@ -32,11 +32,13 @@
 #include <stdlib.h>
 #include <string.h>
 #include <sys/sysinfo.h>
-
+#include <android-base/logging.h>
 #include <android-base/properties.h>
 
 #include "property_service.h"
-#include "vendor_init.h"
+
+namespace android {
+namespace init {
 
 static std::string board_id;
 
@@ -69,3 +71,7 @@ void init_variant_properties(){
 void vendor_load_properties(){
     init_variant_properties();
 }
+
+}  // namespace init
+}  // namespace android
+
