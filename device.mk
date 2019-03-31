@@ -157,7 +157,9 @@ PRODUCT_PACKAGES += \
     liboverlay \
     libgenlock \
     libtinyxml \
-    libdisplayconfig
+    libdisplayconfig \
+    libgpu_tonemapper \
+    libsdm_core
 
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \

@@ -28,6 +28,7 @@ $(call inherit-product, vendor/omni/config/gsm.mk)
 $(call inherit-product, vendor/omni/config/common.mk)
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/omni/overlay/CarrierConfig
+#DEVICE_PACKAGE_OVERLAYS += device/xiaomi/land/overlay
 
 #Boot Animation Omani Stuff.
 TARGET_BOOTANIMATION_SIZE := 720p
